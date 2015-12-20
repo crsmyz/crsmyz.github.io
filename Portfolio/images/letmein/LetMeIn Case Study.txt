@@ -1,0 +1,25 @@
+LetMeIn Case Study
+===
+
+Title:
+---
+
+LetMeIn App
+
+
+Summary of app:
+---
+
+A quick and easy way to notify you when to let your pet indoors, and a convenient pet tracker so you can keep tabs on where your pet has been and its current location. Uses GPS and smart collar integration to notify you on the phone or smartwatch platforms.
+
+
+UX Deliverables:
+---
+
+1. UX design
+2. Product design
+3. Visual/UI design
+
+
+Don't know if I have anything else? no research or anything etc.
+

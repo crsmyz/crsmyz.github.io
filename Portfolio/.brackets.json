@@ -1,0 +1,15 @@
+{
+    "sass.enabled": false,
+    "path": {
+        "scss/site.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "includePaths": [                           "../bower_components/bourbon/app/assets/stylesheets/"
+                ],
+                "sourceComments": true,
+                "outputStyle": "nested"
+            },
+        }
+    }
+}
