@@ -23,6 +23,19 @@ h1, h2, h3, h4, h5 {
 a {color: #555555;text-decoration: none;}
 a:hover {color: #5185c9;}
 
+li {padding: 15px 15px;}
+
+.nav, .nav ul {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25em;
+    font-weight:300;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
 ul {
     color: #555555;
     font-family: 'Merriweather', serif;
@@ -32,13 +45,11 @@ ul {
     padding-top: 30px;
 }
 
-li {padding: 10px 10px;}
-
 ol {
     color: #555555;
     font-family: 'Merriweather', serif;
     font-weight: 400;
-    line-height: 1.45;
+    line-height: 1.45em;
     padding-bottom: 30px;
     padding-top: 30px;
 }
@@ -47,7 +58,7 @@ p {
     color: #555555;
     font-family: 'Merriweather', serif;
     font-weight: 400;
-    line-height: 1.45;
+    line-height: 1.45em;
     padding-bottom: 30px;
     padding-top: 30px;
 }
@@ -60,6 +71,10 @@ p {
     padding-top: 30px;
 }
 
+.line-break2 {
+    border-top: 1px solid #9a9a9a;
+}
+
 .border {border: 1px solid #555555;}
 .thumb {display: flex;}
 .thumb-item-top {padding-top: 100px;}
@@ -69,6 +84,7 @@ p {
 .about-logo {width: 100px;}
 .active {color: #5185c9;}
 .img-portfolio {margin-bottom: 50px;}
+.img-portfolio2 {margin-bottom: 50px; width: 100%}
 .link {color: #333333;}
 .selected {color: #5185c9;}
 .fa-behance:hover {color: #1769FF;opacity: 1.0;}
@@ -76,6 +92,8 @@ p {
 .fa-twitter:hover {color: #55ACEE;}
 .header-wrap {padding-bottom: 100px;}
 .float-right {float: right;}
+.fa-1-5x {font-size: 1.5em;}
+.about-img-wrap {padding-bottom: 100px;}
 
 .logo {
     height: 125px;
@@ -95,13 +113,6 @@ p {
 .sub-headline {
     padding-bottom: 25px;
     padding-top: 25px;
-}
-
-.nav {
-    font-family: 'Lato', sans-serif;
-	font-size: 1.25em;
-    font-weight:300;
-    list-style: none;
 }
 
 .nav-item {
@@ -160,7 +171,7 @@ p {
 }
 
 .social-media {
-    padding: 25px;
+    padding-top: 25px;
 }
 
 /****************************
@@ -176,7 +187,7 @@ Tablet 1024px
     }
     
     .header-wrap {
-    padding-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .nav {
@@ -198,38 +209,14 @@ Phone 768px
 **************************/
 @media (max-width: 767px) {
     
+    .header-wrap {
+        padding-bottom: 5px;
+    }
+    
+    .about-img-wrap {padding-bottom: 50px;}
 
     .name {
-        padding-bottom: 25px;
-        padding-top: 50px;
-    }
-
-    .flex-right {
-        display: flex;
-    }
-
-    .center {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nav {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.25em;
-        font-weight:300;
-    }
-
-    ul {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 10px;
-        width: 100%;
-    }
-
-    .nav-item {
-        align-content: center;
-        padding: 20px;
+        padding-top: 25px;
     }
 
     .logo {
@@ -240,5 +227,16 @@ Phone 768px
     .link-social {
         padding-left: 10px;
         padding-right: 10px;
-    }   
+    }
+    
+    .nav, .nav ul {
+        display: flex;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.25em;
+        font-weight:300;
+        justify-content: center;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
 }
