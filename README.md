@@ -1,2 +1,2 @@
-# crsmyz.github.io
-Chris Medykiewicz's design portfolio
+# Chris Medykiewicz's Portfolio
+Chris Medykiewicz's development and design portfolio.
