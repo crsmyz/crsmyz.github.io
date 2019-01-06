@@ -8,6 +8,11 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
+h5 {
+    font-size: 0.88em;
+    padding-bottom: 3em;
+}
+
 .heading1 {font-size: 3.157em;}
 .heading2 {font-size: 2.369em;}
 .heading2-portfolio {font-size: 2.369em;padding-top:200px;padding-bottom: 30px;}
@@ -19,9 +24,14 @@ h1, h2, h3, h4, h5 {
 .heading4-bold {font-size: 1.333em;font-weight: 700;text-align: center;padding: 0.5em;text-transform: uppercase;}
 .heading4-bold-tiles {font-size: 1.333em;font-weight: 700;text-align: center;padding: 0.5em;padding-bottom: 1em;padding-top: 1em;text-transform: uppercase;text-decoration: underline;}
 .heading4 {font-size: 1.333em;}
-.heading5 {font-size: 1em;}
+.heading5 {font-size: 1em; padding-bottom: 1em;}
 .heading5-italic {font-size: 1em;font-style: italic;}
 .heading5-bold {font-size: 1em;font-weight: 700;}
+.about-heading {font-size: 2.369em; padding-bottom: 30px;}
+
+.grey-overlay { 
+    opacity: 0.7; 
+}
 
 .caption {
     font-size: 1.333em;
@@ -54,7 +64,6 @@ ul {
     font-weight: 400;
     line-height: 1.45;
     padding-bottom: 30px;
-    padding-top: 30px;
 }
 
 ol {
@@ -71,8 +80,6 @@ p {
     font-family: /*'Merriweather', serif*/'Domine', serif;
     font-weight: 400;
     line-height: 1.45em;
-    padding-bottom: 30px;
-    padding-top: 30px;
 }
 
 .paragraph {font-size: 1em;}
