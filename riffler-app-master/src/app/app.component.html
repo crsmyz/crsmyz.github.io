@@ -1,0 +1,83 @@
+<div class="loader" *ngIf="testMtgDeck.length === 0 && loadingData">
+  <mat-spinner [color]="primary" [mode]="indeterminate"></mat-spinner>
+</div>
+
+<mat-toolbar class="toolbar">
+  <img src="./assets/logo.png" height="25" width="25">
+  <h1 class="toolbar-text">{{title}}</h1>
+</mat-toolbar>
+
+<header class="app-header">
+  <div>
+    <h1>Welcome to Riffler!</h1>
+    <h5>An app to simulate Magic: The Gathering&#174; decks. <br>To get started, type a list below and click submit.</h5>
+    <i class="fa fa-chevron-down fa-4x" aria-hidden="true"></i>
+    <div class="credit">
+      <p><b>Art Credit: Mitchell Malloy + Wizards of the Coast</b></p>
+    </div>
+  </div>
+</header>
+
+<div class="app-wrapper">
+
+  <h2 class="deckListHere">Type your deck list:</h2>
+  <div class="deck-list-container">
+    <!-- DECK LIST INPUT -->
+    <form class="deck-form">
+      <mat-form-field>
+        <textarea type="text" name="deck-list" class="deck-list" matInput placeholder="1 Cancel" [(ngModel)]="deckDataInput"></textarea>
+      </mat-form-field>
+    </form>
+    <!-- SUBMIT DECKLIST -->
+    <button mat-button (click)="getDeckData()">Submit</button>
+  </div>
+
+
+
+  <div *ngIf="testMtgDeck && testMtgDeck.length > 0">
+    <div class="button-row">
+      <!-- RESET DECK, HAND AND CARDS DRAWN -->
+      <button mat-raised-button="" class="mat-raised-button" (click)="resetSim()">
+        <span class="mat-button-wrapper">Reset</span>
+      </button>
+      <!-- DRAW OPENING HAND -->
+      <button mat-raised-button="" class="mat-raised-button" (click)="drawOpeningHand()">
+        <span class="mat-button-wrapper">Draw Opening Hand</span>
+      </button>
+      <!-- MULLIGAN -->
+      <button mat-raised-button="" class="mat-raised-button" (click)="mulligan()">
+        <span class="mat-button-wrapper">Mulligan</span>
+      </button>
+      <!-- DRAW -->
+      <button mat-raised-button="" class="mat-raised-button" (click)="drawCard()" [disabled]="testMtgDeck.length <= 0">
+        <span class="mat-button-wrapper">Draw a Card</span>
+      </button>
+    </div>
+    <!-- NUMBER OF CARDS IN OPENING HAND -->
+    <h2 class="section-headers">Hand: {{mtgHand.length}}</h2>
+    <div class="hand-row">
+      <!-- CARDS IN OPENING HAND -->
+      <mat-card class="card-card" *ngFor="let hand of mtgHand">
+        <img mat-card-image class="hand-card-img" src={{hand.image_uris.normal}}>
+      </mat-card>
+    </div>
+    <!-- NUMBER OF CARDS DRAWN -->
+    <h2 class="section-headers">Cards Drawn: {{mtgDrawnCards.length}}</h2>
+    <div class="hand-row">
+      <!-- CARDS DRAWN -->
+      <mat-card class="card-card" *ngFor="let drawnCard of mtgDrawnCards">
+        <img mat-card-image class="hand-card-img" src={{drawnCard.image_uris.normal}}>
+      </mat-card>
+    </div>
+    <!-- NUMBER OF CARDS LEFT IN DECK -->
+    <h2 class="section-headers">Deck List: {{testMtgDeck.length}}</h2>
+    <div class="hand-row">
+      <!-- CARDS IN DECK -->
+      <mat-card class="card-card" *ngFor="let deck of testMtgDeck">
+        <img mat-card-image class="hand-card-img" src={{deck.image_uris.normal}}>
+        {{deck.percentageToDraw}}
+      </mat-card>
+    </div>
+
+  </div>
+</div>
