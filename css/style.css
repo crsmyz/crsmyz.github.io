@@ -1,3 +1,5 @@
+@import "./grid.css";
+
 html {font-size: 1em; margin: 10px;}
 
 h1, h2, h3, h4, h5 {
@@ -112,6 +114,11 @@ p {
 .fa-1-5x {font-size: 1.5em;}
 .about-img-wrap {padding-bottom: 50px;}
 
+.menu-selected .menu-link, .menu-selected .menu-link:visited {
+    color: #668fcc;
+    border-bottom: 1px solid #668fcc;
+}
+
 .logo {
     height: 90px;
     width: 90px;
@@ -218,6 +225,18 @@ Tablet 1024px
     .nav-item {
         align-content: center;
         padding: 5px;
+    }
+}
+
+/****************************
+
+Nav fix 900px 
+
+****************************/
+@media screen and (max-width: 900px) {
+
+    .nav li {
+        padding: 15px 8px;
     }
 }
 
