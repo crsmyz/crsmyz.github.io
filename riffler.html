@@ -8,16 +8,20 @@
     <title>Chris Medykiewicz</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.1.0/css/font-awesome.min.css">
+    
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Domine:400,700' rel='stylesheet' type='text/css'>
+    
+    <script src="https://kit.fontawesome.com/3b380024af.js"></script>
 </head>
 
 <body>
     <div class="grid">
         <div class="grid-item">
             <div class="header-wrap">
-                <img src="images/portfolio-logo.png" alt="">
+                <a href="index.html">
+                    <img src="images/portfolio-logo.png" alt="">
+                </a>
             </div>
         </div>
         <div class="grid-item"></div>
@@ -41,11 +45,11 @@
         <div class="grid-item">
         </div>
         <div class="grid-item">
-            <p class="paragraph">Twitter bot designed for MTG.</p>
+            <p class="paragraph">This is a Twitter bot designed and developed for a table top card game known as Magic: The Gathering. It is a tactial and strategic game that combines qualities of chess and poker. Each player creates a deck and starts with a seven card hand, then tries to get their oppenents life total from twenty to zero first. The bot scrapes tournament data from paper and digital events then randomly selects a deck from the top performing players. It then simulates an opening hand of seven cards from that deck and displays it in a tweet. This helps Magic players on twitter: stay in tune with deck trends, find new decks, try new cards, and parse tournament results. "Keep or Mull" is a reference to the decision making process of choosing to keep an opening hand of cards or choosing to shuffle back the cards and take a new hand.</p>
             <h3 class="heading3">Process</h3>
-            <p class="paragraph">Trial and error blah blah.</p>
+            <p class="paragraph">The bot evolved from several tutorials on how to construct a Twitter bot. It was a NodeJS project from the start hosted on Glitch a smaller back end hosting platform for smaller bots. The project quickly out grew the maximum space requirements set by Glitch and I had to move to Heroku. At the heart of the application is the data scraping of mtgtop8.com, a Magic: The Gathering results website. The data scraped here then is used to construct a sample opening hand for consumption. Cards are chosen at random and subtracted from the deck to prevent duplicates of more than four (a player cannot have more than 4 duplicates in a deck). A call is made to scryfall.com api to receive card images after a hand is constructed. These images are stitched together into a single file, a few more data points are added to the tweet such as who plays first, deck name, link to deck list, and game format. Finally the data is tweeted and appears in the feed.</p>
             <h3 class="heading3">Analysis</h3>
-            <p class="paragraph">dasdd.</p>
+            <p class="paragraph">This project evolved from an interest in Twitter bots and exploring the utility of them for my hobbies and civic hacking. I wanted to experiment with the direct utility of a bot that automated a previously manual and exploratority task of deck searching and opening hand evaluation. Twitter has a large community of Magic: The Gathering players at all levels and automating this type of data into a feed had great promise to be of use to players. So far the bot is yielding results and is tweeting hourly everyday. Players are finding playable and non playable cards, as well as deck ideas that might be used in the next tournament. User retention is fairly consistent with most of the players that follow either engaging with the content through likes, comments and/or retweets.</p>
             <h3 class="heading3">Responsibilities</h3>
             <ul>
                 <li>NodeJS development</li>
