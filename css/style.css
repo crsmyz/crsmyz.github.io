@@ -66,11 +66,6 @@ h5 {
 }
 
 .heading4-bold {
-    /* font-size: 1.333em;
-    font-weight: 700;
-    text-align: center;
-    padding: 0.5em;
-    text-transform: uppercase; */
     font-size: 1.2em;
     font-weight: 700;
     text-align: center;
@@ -147,8 +142,6 @@ a:hover {
     padding: 15px 15px;
 }
 
-/*li {padding: 5px 5px;}*/
-
 .nav,
 .nav ul {
     display: flex;
@@ -163,9 +156,7 @@ a:hover {
 
 ul {
     color: #555555;
-    font-family:
-        /*'Merriweather', serif*/
-        'Domine', serif;
+    font-family: 'Domine', serif;
     font-weight: 400;
     line-height: 1.45;
     padding-bottom: 30px;
@@ -173,9 +164,7 @@ ul {
 
 ol {
     color: #555555;
-    font-family:
-        /*'Merriweather', serif*/
-        'Domine', serif;
+    font-family: 'Domine', serif;
     font-weight: 400;
     line-height: 1.45em;
     padding-bottom: 30px;
@@ -184,9 +173,7 @@ ol {
 
 p {
     color: #555555;
-    font-family:
-        /*'Merriweather', serif*/
-        'Domine', serif;
+    font-family: 'Domine', serif;
     font-weight: 400;
     line-height: 1.45em;
 }
@@ -236,7 +223,6 @@ p {
 
 .img-portfolio {
     margin-bottom: 50px;
-    /*box-shadow: 10px 10px 20px #ccc;*/
 }
 
 .link {
@@ -280,11 +266,6 @@ p {
 .menu-selected .menu-link:visited {
     color: #668fcc;
     border-bottom: 1px solid #668fcc;
-}
-
-.logo {
-    height: 90px;
-    width: 90px;
 }
 
 .flex-right {
@@ -361,19 +342,12 @@ p {
     padding-top: 25px;
 }
 
-
-
 /****************************
 
 Tablet 1024px 
 
 ****************************/
 @media (max-width: 1024px) {
-
-    .logo {
-        height: 90px;
-        width: 90px;
-    }
 
     .header-wrap {
         padding-bottom: 100px;
@@ -420,11 +394,6 @@ Phone 768px
 
     .name {
         padding-top: 25px;
-    }
-
-    .logo {
-        height: 90px;
-        width: 90px;
     }
 
     .link-social {
