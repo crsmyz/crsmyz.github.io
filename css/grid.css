@@ -1,5 +1,4 @@
 .grid {
-    
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -118,57 +117,57 @@ Phone 768px
         -ms-grid-row: 1;
         -ms-grid-column: 1;
     }
-    
+
     .grid-item:nth-child(2) {
         -ms-grid-row: 2;
         -ms-grid-column: 1;
     }
-    
+
     .grid-item:nth-child(3) {
         -ms-grid-row: 3;
         -ms-grid-column: 1;
     }
-    
+
     .grid-item:nth-child(4) {
         -ms-grid-row: 4;
         -ms-grid-column: 1;
     }
-    
+
     .grid-item:nth-child(5) {
         -ms-grid-row: 5;
         -ms-grid-column: 1;
     }
-    
+
     .grid-item:nth-child(6) {
         -ms-grid-row: 6;
         -ms-grid-column: 1;
     }
-    
+
     .grid-item:nth-child(7) {
         -ms-grid-row: 7;
         -ms-grid-column: 1;
     }
-    
+
     .grid-item:nth-child(8) {
         -ms-grid-row: 8;
         -ms-grid-column: 1;
     }
-    
+
     .grid-item:nth-child(9) {
         -ms-grid-row: 9;
         -ms-grid-column: 1;
     }
-    
+
     .grid-item:nth-child(10) {
         -ms-grid-row: 10;
         -ms-grid-column: 1;
     }
-    
+
     .grid-item:nth-child(11) {
         -ms-grid-row: 11;
         -ms-grid-column: 1;
     }
-    
+
     .grid-item:nth-child(12) {
         -ms-grid-row: 12;
         -ms-grid-column: 1;
