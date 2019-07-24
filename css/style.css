@@ -387,12 +387,6 @@ Phone 768px
     .header-wrap {
         padding-bottom: 5px;
     }
-    
-    .header-wrap>img {
-        margin: 0 auto;
-        width: 100%;
-        padding-bottom: 5px;
-    }
 
     .about-img-wrap {
         padding-bottom: 50px;
