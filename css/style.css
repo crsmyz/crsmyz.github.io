@@ -22,14 +22,6 @@ h5 {
     padding-bottom: 3em;
 }
 
-.heading1 {
-    font-size: 3.157em;
-}
-
-.heading2 {
-    font-size: 2.369em;
-}
-
 .heading2-portfolio {
     font-size: 2.369em;
     padding-bottom: 30px;
@@ -43,26 +35,6 @@ h5 {
     font-size: 1.777em;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-.heading3-bold {
-    font-size: 1.777em;
-    font-weight: 700;
-}
-
-.heading3-bold-caption {
-    font-size: 1.777em;
-    font-weight: 700;
-    text-align: center;
-    padding: 0.5em;
-}
-
-.heading4-bold-caption {
-    font-size: 1.333em;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 1em;
 }
 
 .heading4-bold {
@@ -95,26 +67,6 @@ h5 {
     padding-left: 0.5em;
 }
 
-.heading5 {
-    font-size: 1em;
-    padding-bottom: 1em;
-}
-
-.heading5-italic {
-    font-size: 1em;
-    font-style: italic;
-}
-
-.heading5-bold {
-    font-size: 1em;
-    font-weight: 700;
-}
-
-.about-heading {
-    font-size: 2.369em;
-    padding-bottom: 30px;
-}
-
 .grey-overlay {
     opacity: 0.7;
 }
@@ -122,7 +74,6 @@ h5 {
 .caption {
     font-size: 1.333em;
     font-family:
-        /*'Domine', serif;*/
         'Lato', sans-serif;
     font-weight: 400;
     padding-top: 40px;
@@ -162,15 +113,6 @@ ul {
     padding-bottom: 30px;
 }
 
-ol {
-    color: #555555;
-    font-family: 'Domine', serif;
-    font-weight: 400;
-    line-height: 1.45em;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
 p {
     color: #555555;
     font-family: 'Domine', serif;
@@ -188,16 +130,8 @@ p {
     padding-top: 30px;
 }
 
-.line-break2 {
-    border-top: 1px solid #9a9a9a;
-}
-
 .border {
     border: 1px solid #555555;
-}
-
-.thumb-item-top {
-    padding-top: 100px;
 }
 
 .thumb-item {
@@ -209,18 +143,6 @@ p {
     width: 100%;
 }
 
-.footer {
-    padding-top: 50px;
-}
-
-.about-logo {
-    width: 100px;
-}
-
-.active {
-    color: #5185c9;
-}
-
 .img-portfolio {
     margin-bottom: 50px;
 }
@@ -229,33 +151,12 @@ p {
     color: #333333;
 }
 
-.selected {
-    color: #5185c9;
-}
-
-.fa-behance:hover {
-    color: #1769FF;
-    opacity: 1.0;
-}
-
 .fa-linkedin:hover {
     color: #4875B4;
 }
 
-.fa-twitter:hover {
-    color: #55ACEE;
-}
-
 .header-wrap {
     padding-bottom: 100px;
-}
-
-.float-right {
-    float: right;
-}
-
-.fa-1-5x {
-    font-size: 1.5em;
 }
 
 .about-img-wrap {
@@ -268,63 +169,10 @@ p {
     border-bottom: 1px solid #668fcc;
 }
 
-.flex-right {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.headline {
-    padding-bottom: 25px;
-    padding-top: 50px;
-}
-
-.sub-headline {
-    padding-bottom: 25px;
-    padding-top: 25px;
-}
-
-.nav-item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    float: left;
-    padding: 0 20px;
-}
-
 .about-img {
     align-content: center;
     display: flex;
     padding-bottom: 50px;
-}
-
-.logo-wrap {
-    max-width: 100px;
-    width: 100px;
-}
-
-.name-wrap {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-}
-
-.about-wrap {
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 40px 0;
-    padding-top: 100px;
-}
-
-.right-wrap {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 0 40px 0;
-}
-
-.center-wrap {
-    display: flex;
-    justify-content: center;
 }
 
 .link-social {
@@ -390,10 +238,6 @@ Phone 768px
 
     .about-img-wrap {
         padding-bottom: 50px;
-    }
-
-    .name {
-        padding-top: 25px;
     }
 
     .link-social {
