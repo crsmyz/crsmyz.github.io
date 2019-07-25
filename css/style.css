@@ -215,7 +215,7 @@ Tablet 1024px
 
 /****************************
 
-Nav fix 900px 
+Nav fix 900px
 
 ****************************/
 @media screen and (max-width: 900px) {
@@ -227,13 +227,19 @@ Nav fix 900px
 
 /**************************
 
-Phone 768px 
+Phone 768px
 
 **************************/
 @media (max-width: 767px) {
 
     .header-wrap {
         padding-bottom: 5px;
+    }
+
+    .header-wrap img {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 1.5rem;
     }
 
     .about-img-wrap {
