@@ -3,160 +3,95 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/portfolio-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chris Medykiewicz</title>
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Domine:400,700' rel='stylesheet' type='text/css'>
-
-    <script src="https://kit.fontawesome.com/3b380024af.js"></script>
+    <link rel="preload" as="image" onload="this.rel='image'" href="portfolio-logo.png" />
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="styles-mini.css" />
+    <link rel="preload" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+    <link rel="preload" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css?family=Domine:400" />
+    <link rel="preload" as="image" onload="this.rel='image'" href="headshot.jpeg" />
+    <script rel="preload" as="script" onload="this.rel='script'"
+        src="https://kit.fontawesome.com/3b380024af.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="portfolio-logo.png" />
+        <link rel="stylesheet" href="styles-mini.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Domine:400" />
+        <link rel="image" href="headshot.jpeg" />
+        <script rel="script" src="https://kit.fontawesome.com/3b380024af.js"></script>
+    </noscript>
 </head>
 
 <body>
-    <div class="grid">
-        <div class="grid-item">
-            <div class="header-wrap">
-                <a href="index.html">
-                    <img src="images/portfolio-logo.png" alt="">
-                </a>
+    <header class="grid">
+        <section class="grid-item">
+            <div>
+                <picture>
+                    <img class="logo" src="portfolio-logo.png" alt="Chris Medykiewicz Logo">
+                </picture>
             </div>
-        </div>
-        <div class="grid-item">
-            <div class="header-wrap center name">
-                <h3 class="heading3-name">Chris Medykiewicz</h3>
-                <h5 class="heading4-bold">front-end dev <span>+</span> ux designer</h5>
+        </section>
+        <section class="grid-item">
+            <div class="center">
+                <h3 class="name">Chris Medykiewicz</h3>
+                <h4 class="job-title">Software Engineer</h4>
                 <div class="social-media">
-                    <a class="link-social" target="_blank" href="https://github.com/crsmyz">
+                    <a target="_blank" href="https://github.com/crsmyz">
                         <i class="fab fa-github fa-2x"></i></a>
-                    <a class="link-social" target="_blank"
-                        href="https://www.linkedin.com/in/christopher-medykiewicz-581a0045/">
+                    <a target="_blank" href="https://www.linkedin.com/in/christopher-medykiewicz-581a0045/">
                         <i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="mailto:crsmyz@gmail.com">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="grid-item">
-            <div class="header-wrap">
-                <ul class="nav menu-list">
-                    <li class="menu-item link"><a href="index.html" class="menu-link">Portfolio</a></li>
-                    <li class="menu-item link menu-selected"><a href="about.html" class="menu-link">About</a></li>
-                    <li class="menu-item link"><a href="mailto:crsmyz@gmail.com" class="menu-link">Contact</a>
+        </section>
+        <section class="grid-item">
+            <nav>
+                <ul class="nav">
+                    <li class="link">
+                        <a href="index.html" class="menu-link">Work</a>
+                    </li>
+                    <li class="link menu-selected">
+                        <a href="about.html" class="menu-link">About</a>
                     </li>
                 </ul>
+            </nav>
             </div>
-        </div>
-        <div class="grid-item"></div>
-        <div class="grid-item">
-            <div class="center about-img-wrap">
-                <img class="about-img" src="images/about-img.png" height="200" width="200" alt="" />
+    </header>
+    <main class="grid">
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h3 class="project-type">About Me:</h3>
             </div>
-        </div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item">
-            <h2 class="about-heading">About Me</h2>
-            <p>My name is Chris Medykiewicz. I'm a front-end developer and UX designer who loves
-                the web and helping people use the web. My work focuses on usability design and development
-                for web applications of all types and sizes,
-                supported
-                by a whole bunch of industry experience. Sometimes I take a graphic design project from the cookie jar
-                every now and then too. Below are some of the things I'm working on right now...</p>
-        </div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item">
-            <h3 class="heading3">Currently working on:</h3>
-            <div class="line-break"></div>
-            <h4 class="heading4">United Health Group -
-                <span>
-                    <i>Front-End Developer</i>
-                </span>
-                <h5><b>June 2019 - Present</b></h5>
-            </h4>
-            <h4 class="heading4">Code for Philly -
-                <span>
-                    <i>Volunteer Front-End Dev and UX Designer</i>
-                </span>
-                <h5><b>February 2016 - Present</b>
-                    <ul>
-                        <li>PA Hospital Finder: <span class="current-work-job-descriptor">design and development</span>
-                        </li>
-                        <li>SEPTA UX: <span class="current-work-job-descriptor">design research and project
-                                management</span></li>
-                    </ul>
-                </h5>
-            </h4>
-        </div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item">
-            <h3 class="heading3">Previously worked on:</h3>
-            <div class="line-break"></div>
-            <div class="grey-overlay">
-                <h4 class="heading4">Keep or Mull Twitter Bot -
-                    <span>
-                        <i>NodeJS Developer</i>
-                    </span>
-                    <h5><b>January 2019 - April 2019</b></h5>
-                </h4>
-                <h4 class="heading4">SEI Investments -
-                    <span>
-                        <i>Front-End Developer and UX Designer</i>
-                    </span>
-                    <h5><b>June 2016 - December 2018</b></h5>
-                </h4>
-                <h4 class="heading4">LetMeIn -
-                    <span>
-                        <i>UX Designer</i>
-                    </span>
-                    <h5><b>October 2015 - January 2016</b></h5>
-                </h4>
-                <h4 class="heading4">Glassbox -
-                    <span>
-                        <i>UX Designer</i>
-                    </span>
-                    <h5><b>April 2015 - September 2015</b></h5>
-                </h4>
-                <h4 class="heading4">EPIC Club -
-                    <span>
-                        <i>Graphic Designer</i>
-                    </span>
-
-                    <h5>
-                        <i>(Electronic Process Instrumentation Computer Club)</i>
-                        </br>
-                        <b>October 2014 - January 2015</b></h5>
-                </h4>
-                <h4 class="heading4">Friends of Chester Valley Trail -
-                    <span>
-                        <i>Web Developer and UX Designer</i>
-                    </span>
-                    <h5><b>November 2013 - May 2015</b></h5>
-                </h4>
-                <h4 class="heading4">Drug Information Association -
-                    <span>
-                        <i>Web Designer and CMS Manager</i>
-                    </span>
-                    <h5><b>May 2013 - June 2016</b></h5>
-                </h4>
-                <h4 class="heading4">MenuDrive -
-                    <span>
-                        <i>Graphic Designer</i>
-                    </span>
-                    <h5><b>May 2012 - August 2012</b></h5>
-                </h4>
-                <h4 class="heading4">Rhoads Creative -
-                    <span>
-                        <i>Graphic Designer</i>
-                    </span>
-                    <h5><b>June 2011 - August 2011</b></h5>
-                </h4>
+        </section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h3 class="project-and-title">Software Engineer & Former UX Designer</h3>
+                <p>Highly motivated analytical front-end developer and UX designer with strong background in design thinking and user advocacy. Constantly considers application usability from analysis through deployment. Strategizes and applies process improvements. Highly adaptable and capable of multitasking across projects with diverse teams. Communicates design and development decisions in professionally toned speaking and writing.</p>
             </div>
-        </div>
-        <div class="grid-item"></div>
-    </div>
+        </section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <picture>
+                    <img class="about-img" src="headshot.jpeg" height="200" width="200" alt="" />
+                </picture>
+            </div>
+        </section>
+        <footer class="footer social-media">
+            <p>Chris Medykiewicz</p>
+            <a class="link-social" target="_blank" href="https://github.com/crsmyz">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a class="link-social" target="_blank" href="https://www.linkedin.com/in/christopher-medykiewicz-581a0045/">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="mailto:crsmyz@gmail.com" class="menu-link">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+        </footer>
 </body>
 
 </html>

@@ -4,110 +4,308 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/portfolio-logo.png" />
     <title>Chris Medykiewicz</title>
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Domine:400,700' rel='stylesheet' type='text/css'>
-
-    <script src="https://kit.fontawesome.com/3b380024af.js"></script>
+    <link rel="preload" as="image" onload="this.rel='stylesheet'" href="portfolio-logo.png" />
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="styles-mini.css" />
+    <link rel="preload" as="style" onload="this.rel='stylesheet'"
+        href='https://fonts.googleapis.com/css?family=Lato:300,400,700' />
+    <link rel="preload" as="style" onload="this.rel='stylesheet'"
+        href='https://fonts.googleapis.com/css?family=Domine:400' />
+    <script rel="preload" as="script" onload="this.rel='script'"
+        src="https://kit.fontawesome.com/3b380024af.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="portfolio-logo.png" />
+        <link rel="stylesheet" href='styles-mini.css' />
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato:300,400,700' />
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Domine:400' />
+        <script rel="script" src="https://kit.fontawesome.com/3b380024af.js"></script>
+    </noscript>
 </head>
 
 <body>
-    <main class="grid">
-        <div class="grid-item">
-            <div class="header-wrap">
-                <img src="images/portfolio-logo.png" alt="">
+    <header class="grid">
+        <section class="grid-item">
+            <div>
+                <picture>
+                    <img class="logo" src="portfolio-logo.png" alt="Chris Medykiewicz Logo">
+                </picture>
             </div>
-        </div>
-
-        <div class="grid-item">
-            <div class="header-wrap center name">
-                <h3 class="heading3-name">Chris Medykiewicz</h3>
-                <h5 class="heading4-bold">front-end dev <span>+</span> ux designer</h5>
+        </section>
+        <section class="grid-item">
+            <div class="center">
+                <h3 class="name">Chris Medykiewicz</h3>
+                <h4 class="job-title">Software Engineer</h4>
                 <div class="social-media">
-                    <a class="link-social" target="_blank" href="https://github.com/crsmyz">
+                    <a target="_blank" href="https://github.com/crsmyz">
                         <i class="fab fa-github fa-2x"></i></a>
-                    <a class="link-social" target="_blank"
-                        href="https://www.linkedin.com/in/christopher-medykiewicz-581a0045/">
+                    <a target="_blank" href="https://www.linkedin.com/in/christopher-medykiewicz-581a0045/">
                         <i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="mailto:crsmyz@gmail.com">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-
-        <div class="grid-item">
-            <div class="header-wrap">
+        </section>
+        <section class="grid-item">
+            <nav>
                 <ul class="nav">
-                    <li class="menu-item link menu-selected"><a href="index.html" class="menu-link">Portfolio</a></li>
-                    <li class="menu-item link"><a href="about.html" class="menu-link">About</a></li>
-                    <li class="menu-item link"><a href="mailto:crsmyz@gmail.com" class="menu-link">Contact</a>
+                    <li class="link menu-selected">
+                        <a href="index.html" class="menu-link">Work</a>
+                    </li>
+                    <li class="link">
+                        <a href="about.html" class="menu-link">About</a>
                     </li>
                 </ul>
+            </nav>
             </div>
-        </div>
+    </header>
+    <main class="grid">
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h3 class="project-type">Current:</h3>
+            </div>
+        </section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h3 class="project-and-title">NewRez - Software Engineer</h3>
+                <p>
+                    Developed and maintained Angular components, services, and libraries for the ezHub portal,
+                    Newrez's DTC loan origination and servicing application. The ezHub portal application serves over
+                    70,000 customers daily and processes millions of dollars in loan payments each month.
+                    <br><br>
+                    Engineered React class/functional components, Redux state, and bugfixes for the Newrez Customer
+                    Portal DTC loan origination application. The Customer Portal application originated billions of
+                    dollars in loans for both Newrez and JV partner companies. Customer Portal served over 100,000
+                    customers and was the precursor to the newly designed ezHub DTC application.
+                    <br><br>
+                    Contributed to evolving the ezHub portal application into a micro front-end architecture using
+                    NX, Angular 12, and Webpack 5 Module Federation. This allowed for better scalability, re-use of
+                    components, flexible deployment, and limited dependencies on front-end engineers.
+                    <br><br>
+                    Led a migration of 18 partner mortgage companies (JVs) from the legacy DTC application to the
+                    new ezHub portal, giving thousands of customers an upgraded experience. Migration occurred
+                    over 9 months and included: building a white labeling design system, extensive Jira planning,
+                    coordinated development across applications, and rigorous release preparation.
+                    <br><br>
+                    Implemented Application Insights on ezHub UI and servers, substantially reducing debugging
+                    time and increasing the effectiveness of error monitoring. Collaborated with other engineers using
+                    Application Insights, SEQ logging, and Splunk alerts to tackle production bugs across the stack at
+                    all priority levels.
+                    <br><br>
+                    Cultivated and contributed to team discussions on software development and devops practices to
+                    achieve positive sprint outcomes under a new Agile system. Outcomes achieved included: better
+                    sprint development practices, robust QA processes, and a highly reliable release system with
+                    thorough documentation. This resulted in near zero post release production issues.
+                </p>
+            </div>
+        </section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h4 class="date">06/01/2020 - Now</h4>
+            </div>
+        </section>
 
-        <div class="grid-item">
+        <section class="grid-item">
             <div class="thumb-item">
-                <a href="riffler.html">
-                    <h4 class="heading4-bold-tiles" style="text-align:center;">Riffler</h4>
-                    <img class="img-thumb" src="images/riffler/riffler-thumb.png" alt="" />
-                </a>
+                <h3 class="project-type">Previous:</h3>
             </div>
-        </div>
-        <div class="grid-item">
+        </section>
+        <section class="grid-item">
             <div class="thumb-item">
-                <a href="keepormull.html">
-                    <h4 class="heading4-bold-tiles" style="text-align:center;">KeepOrMull Bot</h4>
-                    <img class="img-thumb" src="images/keep-or-mull/keep-or-mull-thumb.png" alt="" />
-                </a>
+                <h3 class="project-and-title">Prevention Point (Code for Philly) - Frontend Engineer</h3>
+                <p>
+                    Contributing front-end expertise in React and state management to building a unified EPRs
+                    (Electronic Participant Record System). This system will allow better analysis of data, improve
+                    program effectiveness, save time, enable more funding, and vastly improve participant outcomes.
+                    <br><br>
+                    Developing the participant info component to allow the creation, editing, and adding of participants
+                    to Prevention Point programs and services for tracking in the application.
+                    <br><br>
+                    Supporting and building out TDD efforts based around Jest for testing React components.
+                </p>
             </div>
-        </div>
-        <div class="grid-item">
+        </section>
+        <section class="grid-item">
             <div class="thumb-item">
-                <a href="letmeinapp.html">
-                    <h4 class="heading4-bold-tiles" style="text-align:center;">LetMeIn</h4>
-                    <img class="img-thumb" src="images/letmein/letmein-thumb.png" alt="" />
-                </a>
+                <h4 class="date">09/2019 - 02/2021</h4>
             </div>
-        </div>
-        <div class="grid-item">
-            <div class="thumb-item"><a href="glassboxapp.html">
-                    <h4 class="heading4-bold-tiles" style="text-align:center;">Glassbox</h4>
-                    <img class="img-thumb" src="images/glassbox/glassbox-thumb.png" alt="" />
-                </a>
+        </section>
+        <section class="grid-item"></section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h3 class="project-and-title">UnitedHealth Group - Software Engineer</h3>
+                <p>
+                    Developing new Medicare supplemental insurance applications and pages in Adobe Experience Manager
+                    using JavaScript, jQuery, and Vue that adhere to rigorous legal compliance for 50+ states,
+                    territories, and the Federal Government.
+                    <br><br>
+                    Collaborating and integrating with peripheral application teams to implement new Medicare
+                    supplemental app features such as saving of med supp plans to user profiles. This allows seamless
+                    transition from other parts of the Medicare website to view plans and enrollment for all channels.
+                    <br><br>
+                    Incrementally improving code quality by introducing ES6 with babel and removing older out of date
+                    frameworks across all Medicare supplemental insurance applications. across, web, phone, remote
+                    agents, email, and call centers channels.
+                    <br><br>
+                    Performed root cause analysis and formulated fixes on defects for all Medicare supplemental
+                    insurance applications in test, stage, and production environments. This greatly improved enrollment
+                    and plan viewing experiences for 100k+ annual enrollees.
+                    <br><br>
+                    Innovating build and development processes by introducing SASS, Webpack, Babel, and Prettier.
+                    Automating build processes with Webpack allowed operating efficiency to increase by 15%. Using Babel
+                    allowed modernization to ES6 while still covering ES5 browser requirements.
+                </p>
             </div>
-        </div>
-        <div class="grid-item">
-            <div class="thumb-item"><a href="epiclogo.html">
-                    <h4 class="heading4-bold-tiles" style="text-align:center;">EPIC Club</h4>
-                    <img class="img-thumb" src="images/epic/epic-logo-thumb2.png" alt="" />
-                </a>
+        </section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h4 class="date">06/2019 - 02/2020</h4>
             </div>
-        </div>
-        <div class="grid-item">
-            <div class="thumb-item"><a href="friends-website.html">
-                    <h4 class="heading4-bold-tiles" style="text-align:center;">Friends of the CVT</h4>
-                    <img class="img-thumb" src="images/cvtwebsite/cvtwebsite-thumb.png" alt="">
-                </a>
+        </section>
+        <section class="grid-item"></section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h3 class="project-and-title">LighterPack - OSS Contributor</h3>
+                <p>
+                    LighterPack is an open source web app that tracks gear for camping and backpacking adventures. It
+                    has a lot of useful features including weight tracking, categorization, and visual breakdowns of all
+                    the gear for your trip.
+                    <br><br>
+                    https://github.com/galenmaly/lighterpack
+                </p>
             </div>
-        </div>
-        <div class="grid-item">
-            <div class="thumb-item"><a href="dia.html">
-                    <h4 class="heading4-bold-tiles" style="text-align:center;">Drug Information Association</h4>
-                    <img class="img-thumb" src="images/dia/dia-thumb.png" alt="" />
-                </a>
+        </section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h4 class="date">01/1/2019 - 12/31/2019</h4>
             </div>
-        </div>
-        <div class="grid-item">
-            <div class="thumb-item"><a href="menudrive.html">
-                    <h4 class="heading4-bold-tiles" style="text-align:center;">MenuDrive</h4>
-                    <img class="img-thumb" src="images/menudrive/menudrive-thumb.png" alt="" />
-                </a>
+        </section>
+        <section class="grid-item"></section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h3 class="project-and-title">Leverage App (Code for Philly) - UX Designer / Frontend Engineer</h3>
+                <p>
+                    Campaign finance app for tracking contributions made to political campaigns in the city of
+                    Philadelphia.
+                    <br><br>
+                    Developed a demo application for Leverage, a campaign finance tracking application using Angular
+                    components and a public-facing REST API of campaign finance data.
+                    <br><br>
+                    Contributed to Leverage core UI development using JavaScript interfacing with OpenDataPhilly API to
+                    create dynamic views of financial statuses of each ongoing campaign.
+                    <br><br>
+                    Designed intuitive user-friendly wireframes and information architecture for Leverage by using focus
+                    groups and user testing data.
+                    <br><br>
+                    Assisted in planning and executing the City as a Service hackathon for Code for Philly. Coached
+                    first-time volunteers on projects; gave each project a solid UX and Front-End Development
+                    springboard.
+                </p>
             </div>
-        </div>
+        </section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h4 class="date">02/1/2017 - 10/28/2017</h4>
+            </div>
+        </section>
+        <section class="grid-item"></section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h3 class="project-and-title">SEI - Frontend Software Engineer</h3>
+                <p>
+                    Developing Angular UI components for the SEI common component library and SEI Wealth platform
+                    applications, greatly increasing efficiency and reducing cost for application construction.
+                    <br><br>
+                    Developing and maintaining Angular UI features and components for SEI's Portfolio Manager Experience
+                    application, a middle and front office banking application that enables management of client
+                    portfolios, financial models and other financial services.
+                    <br><br>
+                    Analyzing, fixing and refactoring defects in the SEI Portfolio Manager Experience application and
+                    SEI common component library with notable effectiveness and speed.
+                    <br><br>
+                    Writing and designing Jasmine test cases run with Karma using a TDD approach to test Angular UI
+                    components in SEI Wealth Platform applications and the common component library. This allowed UI
+                    behavior to become predictable with edge cases and all future enhancements.
+                    <br><br>
+                    Writing end-to-end Cucumber and Selenium test cases for the SEI Portfolio Manager Experience and the
+                    common component library to vastly reduce manual test regression efforts and allow BAs/ QAs to focus
+                    testing on newly-developed features.
+                    <br><br>
+                    Designed UX wireframes using Axure, HTML and LESS for Angular development inside the SEI Portfolio
+                    Manager Experience application. This gave developers a clear and concise UI development target and
+                    established consistent UI patterns and a solid baseline CSS architecture.
+                    <br><br>
+                    Collaborated with the UX governance, User Acceptance Testing and Enterprise System Testing teams to
+                    improve the defect tracking process on features with acceptance criteria.
+                    <br><br>
+                    Reduced development R&D time and front-end requirement complexity for UX Epics and Features by
+                    teaching UX goverance team members how Angular.js and Wijmo.js libraries function.
+                </p>
+            </div>
+        </section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h4 class="date">06/2016 - 12/2018</h4>
+            </div>
+        </section>
+        <section class="grid-item"></section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h3 class="project-and-title">Friends of the Chester Valley Trail - Web Developer</h3>
+                <p>
+                    Designed and developed all visuals and features for the website, using HTML, CSS, JavaScript, jQuery
+                    and PHP with WordPress CMS.
+                    <br><br>
+                    Implemented features including blog, calendar, search, Google Maps, photo gallery, contact and
+                    membership form using PayPal as payment vehicle.
+                    <br><br>
+                    Visual development for the website includes site mapping, wireframes, layout mockups, icons, photo
+                    editing, setting legible typography and SVG elements.
+                </p>
+            </div>
+        </section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h4 class="date">11/2013 - 05/2015</h4>
+            </div>
+        </section>
+        <section class="grid-item"></section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h3 class="project-and-title">Drug Information Association - Web Designer / Web Editor</h3>
+                <p>
+                    Researched and contributed to CSS authoring guidelines to help maintain scalable, legible and
+                    modular code for use across the DIA IT and development team.
+                    <br><br>
+                    Used Sitecore CMS to managed and edit HTML, copy and images for the website for all DIA globally.
+                    <br><br>
+                    Meticulously tested new deployments of the website and reported and logged errors in HTML, CSS,
+                    JavaScript and article copy.
+                    <br><br>
+                    Created and configured new pages and content areas on the DIA website using Sitecore CMS.
+                    <br><br>
+                    Designed mockups for new features and web pages in Photoshop and using HTML, CSS and JavaScript.
+                </p>
+            </div>
+        </section>
+        <section class="grid-item">
+            <div class="thumb-item">
+                <h4 class="date">05/2013 - 06/2016</h4>
+            </div>
+        </section>
     </main>
+    <footer class="footer social-media">
+        <p>Chris Medykiewicz</p>
+        <a target="_blank" href="https://github.com/crsmyz">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/christopher-medykiewicz-581a0045/">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="mailto:crsmyz@gmail.com" class="menu-link">
+            <i class="fas fa-envelope fa-2x"></i>
+        </a>
+    </footer>
 </body>
 
 </html>
